@@ -67,10 +67,14 @@ public class Main {
 		service.start();
 		
 	}
+	
+	//
 
 	@BeforeTest
 	public void setup() throws MalformedURLException {
 		
+		
+		//desired cap
 		DesiredCapabilities cap=new DesiredCapabilities();
 		cap.setCapability("platformVersion", "8.1.0");
 		cap.setCapability("platformName", "Android");
